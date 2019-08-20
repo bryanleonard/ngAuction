@@ -1,1 +1,22 @@
-<p>product-detail works!</p>
+<!-- <p>product-detail works!</p>
+
+<p>Product Id: {{productId}}</p>
+
+<p>Product category: {{productCategory}}</p> -->
+
+<div class="card mb-3">
+	<img src="http://placehold.it/250x150" class="card-img-top" alt="...">
+	<div class="card-body pb-3">
+		<h5 class="card-title">{{product.title}}</h5>
+		<p class="card-text">{{product.description}}</p>
+		<p class="card-text text-right">
+			<span class="badge-pill badge-light">
+				{{product.price | currency}}
+			</span>
+		</p>
+		<div class="ratings">
+			<nga-stars [rating]="product.rating"></nga-stars>
+		</div>
+		<!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+	</div>
+</div>
