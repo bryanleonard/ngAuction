@@ -15,6 +15,8 @@ import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
 import { ErrorComponent } from './error/error.component';
 
+import {AuctionMaterialModule} from "./auction-material/auction-material.module";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,8 @@ import { ErrorComponent } from './error/error.component';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuctionMaterialModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
